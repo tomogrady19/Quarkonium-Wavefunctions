@@ -1,7 +1,7 @@
 """Meson Class"""
 import numpy as np
 from scipy.integrate import odeint
-from scipy.integrate import simps
+from scipy.integrate import simpson
 
 class Meson:
 
@@ -111,7 +111,7 @@ class Meson:
         ys = self.wf_E(E)
         prob_density = np.square(ys)
 
-        ys /= simps(prob_density, self.rs) ** 0.5  # normalise
+        ys /= simpson(prob_density, self.rs) ** 0.5  # normalise
         return ys
 
 
@@ -129,4 +129,5 @@ def nodes(X):  # calculating the number of nodes (interceptions of the x axis)
     for i in range(len(X) - 1):
         if X[i] * X[i + 1] <= 0:
             M += 1
+
     return M
