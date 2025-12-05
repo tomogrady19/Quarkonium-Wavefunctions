@@ -17,8 +17,8 @@ def plot_charmonium():
     for i, nl in enumerate(nl_list):
         plot_wf(meson, *nl, E_ranges[i])
 
-    plt.ylabel('$\mathregular{u_{nl}}(r)$')
-    plt.xlabel('$r$ / $\mathregular{GeV^{-1}}$')
+    plt.ylabel(r'$\mathregular{u_{nl}}(r)$')
+    plt.xlabel(r'$r$ / $\mathregular{GeV^{-1}}$')
     plt.title('Charmonium Radial Wavefunction')
     plt.legend()
     plt.grid()
@@ -34,8 +34,8 @@ def plot_bottomonium():
     for i, nl in enumerate(nl_list):
         plot_wf(meson, *nl, E_ranges[i])
 
-    plt.ylabel('$\mathregular{u_{nl}}(r)$')
-    plt.xlabel('$r$ / $\mathregular{GeV^{-1}}$')
+    plt.ylabel(r'$\mathregular{u_{nl}}(r)$')
+    plt.xlabel(r'$r$ / $\mathregular{GeV^{-1}}$')
     plt.title('Bottomonium Radial Wavefunction')
     plt.legend()
     plt.grid()
@@ -51,8 +51,8 @@ def plot_bc_meson():
     for i, nl in enumerate(nl_list):
         plot_wf(meson, *nl, E_ranges[i])
 
-    plt.ylabel('$\mathregular{u_{nl}}(r)$')
-    plt.xlabel('$r$ / $\mathregular{GeV^{-1}}$')
+    plt.ylabel(r'$\mathregular{u_{nl}}(r)$')
+    plt.xlabel(r'$r$ / $\mathregular{GeV^{-1}}$')
     plt.title('Bc Meson Radial Wavefunction')
     plt.legend()
     plt.grid()
@@ -61,3 +61,4 @@ def plot_bc_meson():
 plot_charmonium()
 plot_bottomonium()
 plot_bc_meson()
+
